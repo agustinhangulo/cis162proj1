@@ -1,0 +1,93 @@
+@charset "utf-8";
+/*
+    Styling Sheet for Project 1-3
+*/
+
+/* Body */
+
+html {
+    background-color: #DACBB4;
+    color: azure;
+}
+
+body {
+    margin: auto;
+    width: 700px;
+}
+
+/* Header + h1, h2 */
+
+header {
+    text-align: center;
+    font-size: x-large;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;  /* Stylize the headings w/ serif to stand out */
+    font-variant: small-caps;
+    text-align: center;
+}
+
+/* Nav list */
+
+nav > ul {
+    padding-left: 0px;
+    line-height: 1.5em;
+    list-style: none;
+    text-align: center;    
+}
+
+a {
+    font-weight: bold;
+}
+
+
+a:link {  /* The following controls the color of links */
+    color : #728FCE
+}
+
+a:visited {
+    color: #4369A2;
+}
+
+a:hover {
+    color: #4369A2;
+}
+
+a:active {
+    color: brown;
+}
+
+/* Section */
+
+section {
+    padding: 10px;  /* Add space to sections to make them stand out more */
+}
+
+section p, li{  /* sans-serif font for normal body */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+hr {  /* Horizontal lines to separate sections */
+    border-top: 1px solid azure;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+
+/* Footer */
+
+footer {
+    color: azure;
+    background-color: #774e2a;
+    line-height: 0.5em;
+    
+    width: 700px;
+    text-align: center;
+    padding: 5px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-small;
+}
