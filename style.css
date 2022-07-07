@@ -10,9 +10,10 @@ html {
     color: azure;
 }
 
-body {
-    margin: auto;
-    width: 700px;
+body {  /* Center all elements-- this does not center align text */
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
 }
 
 /* Header + h1, h2 */
@@ -30,38 +31,94 @@ h1, h2 {
 
 /* Nav list */
 
-nav > ul {
+section#otherPages {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8%;
+    background-color: #774e2a;
+
+    line-height: 0.5em;
+    padding-top: 0.05px;
+}
+
+section#otherPages h2 {
+    font-size: large;
+}
+
+section#otherPages > nav > ul{
     padding-left: 0px;
-    line-height: 1.5em;
     list-style: none;
-    text-align: center;    
+    text-align: center;
+
+    display: block;
+    
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-a {
-    font-weight: bold;
+a { font-weight: bold; }  /* The following controls the typography of links in general */
+
+a:link { color : #728FCE }
+
+a:visited { color: #4369A2; }
+
+a:hover { color: #4369A2; }
+
+a:active { color: tomato; }
+
+section#otherPages li {  /* The following controls the appearance of links in the Other Pages section */
+    width: 100px;
+    display: inline-block;
 }
 
-
-a:link {  /* The following controls the color of links */
-    color : #728FCE
+section#otherPages a {
+    display: block;
+    color: beige;
+    padding: 12px;
+    text-decoration: none;
 }
 
-a:visited {
-    color: #4369A2;
-}
+section#otherPages a:hover { background-color: #54371d; }
 
-a:hover {
-    color: #4369A2;
-}
-
-a:active {
-    color: brown;
-}
+section#otherPages a:active { color: tomato; }
 
 /* Section */
 
-section {
-    padding: 10px;  /* Add space to sections to make them stand out more */
+section#leftCol {
+    box-sizing: border-box;
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    padding-right: 40px;
+    margin: auto;
+}
+
+section#rightCol {
+    box-sizing: border-box;
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    padding-left: 40px;
+    margin: auto;
+}
+
+div#columnWrapper {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+div#columnWrapper > p {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+div#columnWrapper > img {
+    width: 30%;
 }
 
 section p, li{  /* sans-serif font for normal body */
@@ -69,25 +126,24 @@ section p, li{  /* sans-serif font for normal body */
     font-size: small;
 }
 
-hr {  /* Horizontal lines to separate sections */
-    border-top: 1px solid azure;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-}
-
-
 /* Footer */
 
-footer {
+footer {  /* Typographic Features for Footer */
     color: azure;
     background-color: #774e2a;
     line-height: 0.5em;
     
-    width: 700px;
-    text-align: center;
-    padding: 5px;
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-small;
+}
+
+footer {  /* Structuring for Footer */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+
+    clear: both;
+    text-align: center;
+    padding: 5px;
 }
